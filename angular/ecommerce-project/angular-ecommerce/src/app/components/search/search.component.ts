@@ -8,14 +8,14 @@ import { Router } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private rota: Router) { }
 
   ngOnInit() {
   }
 
   doSearch(value: string) {
     console.log(`value=${value}`);
-    this.router.navigateByUrl(`/search/${value}`);
+    this.rota.navigateByUrl(`/search/${value}`);
   }
 
 }
